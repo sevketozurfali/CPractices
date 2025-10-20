@@ -1,0 +1,64 @@
+Temel algoritma mantığını pekiştirmek, diziler ve string’lerle rahat çalışmak.
+Her gün 1 problem, hafta sonunda 1 mini proje.
+
+📅 GÜNLÜK ALGORİTMA GÖREVLERİ
+🧮 Gün 1 — Asal Sayı Kontrolü
+
+Kullanıcıdan bir sayı al, asal olup olmadığını yazdır.
+
+Bonus: Fonksiyonla yap, int isPrime(int n).
+
+🧮 Gün 2 — Palindrome Kontrolü
+
+Girilen kelimenin tersten de aynı olup olmadığını kontrol et.
+
+"kek" → Palindrome
+"kalem" → Değil
+
+🧮 Gün 3 — En Büyük / En Küçük Sayı
+
+Kullanıcıdan 10 elemanlı bir dizi al, en büyük ve en küçük sayıyı bul.
+
+🧮 Gün 4 — Dizi Ortalaması ve Standart Sapma
+
+Bir dizinin ortalamasını ve standart sapmasını hesapla.
+
+Bonus: Fonksiyonlara böl.
+
+🧮 Gün 5 — String İşlemleri
+
+strlen, strcpy, strcmp fonksiyonlarını kendi kodunla yaz.
+
+🧮 Gün 6 — Fibonacci Dizisi
+
+Kullanıcıdan n iste, n terimli Fibonacci dizisini yazdır.
+
+Bonus: Recursive ve iterative iki farklı şekilde yap.
+
+🧮 Gün 7 — Pointer Egzersizi
+
+İki sayıyı pointer kullanarak yer değiştir (swap(int *a, int *b)).
+
+💻 HAFTALIK MİNİ PROJE
+🧩 Hafta 1 Mini Projesi: “Küçük Not Defteri”
+
+Amaç: Dosya işlemlerini ve string kullanımını öğrenmek.
+
+Gereksinimler:
+
+Kullanıcı aşağıdakilerden birini seçebilsin:
+
+Yeni not ekle
+
+Notları listele
+
+Not sil
+
+Çıkış
+
+Tüm notlar notes.txt içinde saklanacak.
+
+Her not bir satır olacak.
+
+Bonus: struct kullanarak notlara tarih alanı ekle.
+

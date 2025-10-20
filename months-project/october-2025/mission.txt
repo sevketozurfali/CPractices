@@ -1,0 +1,14 @@
+🧠 AYLIK İLERİ PROJE (Ay 1 Sonu)
+🚀 Kütüphane Yönetim Sistemi
+
+Kapsadığı konular: struct, dosya işlemleri, dinamik bellek, menü yönetimi
+
+Gereksinimler:
+
+Kitap bilgileri: id, ad, yazar, stok
+
+Dosyadan kitap listesi yükle, ekleme/silme/güncelleme yap.
+
+Program kapatılınca kitaplar library.txt’ye kaydedilsin.
+
+Bonus: Binary dosya formatı (.dat) kullan.

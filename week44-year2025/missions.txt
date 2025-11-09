@@ -1,0 +1,126 @@
+📅 GÜNLÜK ALGORİTMA GÖREVLERİ
+🧮 Gün 1 — Dinamik Dizi Toplamı
+
+Görev:
+Kullanıcıdan eleman sayısını al → malloc ile dizi oluştur → elemanları oku → ortalama ve toplamı hesapla.
+
+İpucu:
+
+int *arr = malloc(n * sizeof(int));
+
+
+Bonus: realloc kullanarak diziyi büyüt (örneğin sonradan eleman ekleme).
+
+🧮 Gün 2 — Struct ile Öğrenci Kaydı
+
+Görev:
+Bir struct Student tanımla:
+
+struct Student {
+    char name[50];
+    int age;
+    float grade;
+};
+
+
+Kullanıcıdan 3 öğrenci bilgisi al, ekrana yazdır.
+
+Bonus: malloc ile Student *students dizisini dinamik oluştur.
+
+🧮 Gün 3 — En Yüksek Notu Bul
+
+Görev:
+Student dizisi içinden en yüksek notu alan öğrenciyi bul.
+
+Bonus: findTopStudent(struct Student *arr, int n) fonksiyonu ile yap.
+
+🧮 Gün 4 — Pointer Aritmetiği
+
+Görev:
+Bir dizi oluştur, sadece pointer kullanarak (indeks kullanmadan)
+dizinin elemanlarını topla ve ortalamasını hesapla.
+
+İpucu:
+
+for (int *p = arr; p < arr + n; p++)
+    sum += *p;
+
+
+Bonus: Dizi tersine çevirme işlemini pointer ile yap.
+
+🧮 Gün 5 — String Dinamik Kopyalama
+
+Görev:
+Kullanıcıdan bir string al, uzunluğunu ölç, dinamik olarak bellek ayır ve içine kopyala.
+
+İpucu:
+
+char *copy = malloc(strlen(input) + 1);
+strcpy(copy, input);
+
+
+Bonus: my_strdup(const char *src) şeklinde kendi strdup fonksiyonunu yaz.
+
+🧮 Gün 6 — Struct’lar Arasında Veri Kopyalama
+
+Görev:
+Bir Book struct tanımla:
+
+struct Book {
+    char title[50];
+    char author[50];
+    float price;
+};
+
+
+Bir Book’u kopyalayıp diğerine ata (memcpy veya elle kopyalama).
+
+Bonus: copyBook(struct Book *dest, const struct Book *src) fonksiyonu yaz.
+
+🧮 Gün 7 — Dosyadan Struct Okuma/Yazma
+
+Görev:
+Student dizisini binary dosyaya kaydet (fwrite), sonra tekrar oku (fread).
+
+İpucu:
+
+fwrite(&student, sizeof(student), 1, file);
+
+
+Bonus: Tüm öğrencileri “tablo” formatında listele.
+
+💻 Hafta 2 Mini Projesi: “Yapılacaklar Listesi (To-Do List)”
+🎯 Amaç:
+
+Dinamik bellek yönetimi, struct ve dosya işlemlerini birlikte kullanmak.
+Küçük ama işlevsel bir konsol uygulaması olacak.
+
+🧱 Gereksinimler:
+
+Menü:
+
+1. Yeni görev ekle
+2. Görevleri listele
+3. Görevi tamamlandı olarak işaretle
+4. Görev sil
+5. Çıkış
+
+
+Her görev struct Task ile temsil edilecek:
+
+typedef struct {
+    int id;
+    char title[64];
+    int completed;
+} Task;
+
+
+Tüm görevler program sonunda todo.dat dosyasına kaydedilecek.
+
+Program açıldığında dosya varsa görevleri otomatik yükleyecek.
+
+Bonus:
+
+time.h ile görev ekleme tarihini sakla.
+
+“tamamlanan görevleri gizle/göster” seçeneği ekle.

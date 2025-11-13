@@ -1,0 +1,129 @@
+
+# 🗓️ **C Gelişim Takvimi — Hafta 3 (Orta–İleri Seviye)**
+
+## 🎯 Hedefler:
+
+* Linked list yapısını sıfırdan kurmak
+* Struct’lar arasında pointer ilişkisini anlamak
+* Dinamik veri ekleme/silme mantığını öğrenmek
+* Basit bir veri yapısı tabanlı proje geliştirmek
+
+---
+
+## ⚙️ **Hafta 3 Pratik Görevleri (6 adet)**
+
+### 🧩 1. **Tek Yönlü Linked List Oluşturma**
+
+**Görev:**
+`Node` yapısı oluştur, kullanıcıdan alınan sayıları linked list’e sırayla ekle.
+Sonra tüm listeyi ekrana yazdır.
+
+```c
+typedef struct Node {
+    int data;
+    struct Node *next;
+} Node;
+```
+
+> Bonus: `addToEnd()` ve `printList()` fonksiyonlarını ayrı yaz.
+
+---
+
+### 🧩 2. **Linked List’ten Eleman Silme**
+
+**Görev:**
+Bir sayı girildiğinde listede varsa o düğümü sil.
+
+> Bonus: Listenin başındaki düğüm silinirse özel olarak yönet.
+
+---
+
+### 🧩 3. **Linked List Ters Çevirme**
+
+**Görev:**
+Pointer’ları yeniden düzenleyerek listeyi tersine çevir (`reverseList()` fonksiyonu).
+
+> Bonus: Recursive çözüm dene.
+
+---
+
+### 🧩 4. **Stack (Yığın) Yapısı**
+
+**Görev:**
+Linked list veya dizi kullanarak `push`, `pop`, `peek` fonksiyonlarını yaz.
+
+> Bonus: Stack taşması ve boş olma durumlarını kontrol et.
+
+---
+
+### 🧩 5. **Queue (Kuyruk) Yapısı**
+
+**Görev:**
+Linked list ile `enqueue` (sona ekle), `dequeue` (baştan sil) işlemlerini yap.
+
+> Bonus: Kuyruğun boyutunu tut.
+
+---
+
+### 🧩 6. **Linked List ve Dosya Kaydı**
+
+**Görev:**
+Linked list’teki verileri dosyaya kaydet (`fwrite`), tekrar yükle (`fread`).
+
+> Bonus: Binary format yerine metin formatı kullan (her satır bir düğüm).
+
+---
+
+## 💻 **Hafta 3 Mini Projesi: “Görev Yöneticisi (Task Manager)”**
+
+### 🎯 Amaç:
+
+Linked list + dosya işlemi + modüler yapı
+Yapılacaklar listesi tarzı, ama **dinamik linked list** ile yönetilen versiyonu.
+
+---
+
+### 🧱 Gereksinimler:
+
+* Menü:
+
+  ```
+  1. Görev ekle
+  2. Görevleri listele
+  3. Görevi tamamlandı olarak işaretle
+  4. Görev sil
+  5. Görevleri kaydet
+  6. Çıkış
+  ```
+
+* Her görev struct olarak tutulacak:
+
+  ```c
+  typedef struct Task {
+      int id;
+      char title[64];
+      int completed;
+      struct Task *next;
+  } Task;
+  ```
+
+* Görevler **linked list** yapısında tutulacak.
+
+* Program kapanırken görevler `tasks.txt`’ye kaydedilecek.
+
+* Program açıldığında dosyadan liste yeniden oluşturulacak.
+
+> Bonus:
+
+* ID otomatik artsın (`static int counter` veya dosyadan okuma ile).
+* “tamamlanan görevleri gizle/göster” seçeneği ekle.
+* Dosyayı binary (`.dat`) formatında sakla.
+
+---
+
+## 🧠 **Hafta 3’ün Temel Kazanımları**
+
+* Pointer zinciri mantığı (linked structure)
+* Dinamik ekleme/silme mantığı
+* Fonksiyonel modüler program yapısı
+* Dosya ve bellek arasında veri taşımak

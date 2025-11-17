@@ -29,21 +29,21 @@ typedef struct Node {
 
 ---
 
-### 🧩 2. **Linked List’ten Eleman Silme**
-
-**Görev:**
-Bir sayı girildiğinde listede varsa o düğümü sil.
-
-> Bonus: Listenin başındaki düğüm silinirse özel olarak yönet.
-
----
-
-### 🧩 3. **Linked List Ters Çevirme**
+### 🧩 2. **Linked List Ters Çevirme**
 
 **Görev:**
 Pointer’ları yeniden düzenleyerek listeyi tersine çevir (`reverseList()` fonksiyonu).
 
 > Bonus: Recursive çözüm dene.
+
+---
+
+### 🧩 3. **Linked List’ten Eleman Silme**
+
+**Görev:**
+Bir sayı girildiğinde listede varsa o düğümü sil.
+
+> Bonus: Listenin başındaki düğüm silinirse özel olarak yönet.
 
 ---
 
